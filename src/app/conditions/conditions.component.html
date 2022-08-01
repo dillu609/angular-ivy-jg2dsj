@@ -1,0 +1,26 @@
+<p>Angular conditions</p>
+<!-- <h1 *ngIf="chk=='yes';  else elseBlock">if condition</h1> 
+
+<ng-template #ifBlock>
+<h1>if condition</h1>
+</ng-template> 
+<ng-template #elseBlock>
+<h1>else condition</h1>
+</ng-template> -->
+
+<!-- <ng-template [ngIf] = "chk == 'red'">
+  <h1>red condition</h1>
+  </ng-template>
+<ng-template [ngIf] = "chk == 'green'">
+  <h1>green condition</h1>
+  </ng-template>
+<ng-template [ngIf] = "chk == 'blue'">
+  <h1>blue condition</h1>
+  </ng-template> -->
+  <h1>switch case</h1>
+  <div [ngSwitch]="chk">
+    <h2 style="color:{{chk}}" *ngSwitchCase = "'red'"> red box</h2>
+    <h2 style="color:{{chk}}" *ngSwitchCase = "'green'"> green box</h2>
+    <h2 style="color:{{chk}}" *ngSwitchCase = "'blue'"> blue box</h2>
+    <h2 style="color:pink" *ngSwitchDefault> Default box</h2>
+  </div>

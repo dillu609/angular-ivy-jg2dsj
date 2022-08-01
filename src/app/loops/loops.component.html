@@ -1,0 +1,15 @@
+<p>Angular loops </p>
+<h4 *ngFor = "let item of arr">
+{{item | titlecase}}
+</h4>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+  </tr>
+  <tr *ngFor =" let item of obj">
+    <td>{{item.name | uppercase}}</td>
+    <td>{{item.age}}</td>
+  </tr>
+</table>

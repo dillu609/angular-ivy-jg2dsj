@@ -1,0 +1,6 @@
+<p>Angular style-binding </p>
+<h1 style="color:red"> normal style</h1>
+<h1 [style.color]="'green'"> property binding style</h1>
+<h1 [style.color]="color"> property binding with string style</h1>
+<button (click)="changeColor()">Change color</button>
+<h1 [style.color]="err?'red':'blue'"> conditional style</h1>

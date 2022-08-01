@@ -1,0 +1,27 @@
+<p>Angular Event Binding</p>
+<button (click)="getEvent('Dilshad')">Click me</button>
+<!-- {{name}} -->
+<br/><br/>
+<input type="text" #box (keyup)="getEvent(box.value)" placeholder="keyup">
+<br/><br/>
+<input type="text" #boxs (keyup.enter)="getEvent(boxs.value)" placeholder="keyup.enter">
+<br/><br/>
+<input type="text" #box1 (keyup.space)="getEvent(box1.value)" placeholder="keyup.space">
+<br/><br/>
+<input type="text" #boxs1 (keydown)="getEvent(boxs1.value)" placeholder="keydown">
+<br/><br/>
+<input type="text" #box2 (keydown.enter)="getEvent(box2.value)" placeholder="keydown.enter">
+<br/><br/>
+<input type="text" #box3 (keydown.space)="getEvent(box3.value)" placeholder="keydown.space">
+<br/><br/>
+<input type="text" #box4  (blur)="getEvent(box4.value)" placeholder="blur">
+<br/><br/>
+<div style="background:skyblue" (mouseenter)="getEvent('mouse in')" (mouseout)="getEvent('mouse out')">mouse Event</div>
+
+<p>get value of input</p>
+<input type="text" #keyup (keyup)="getVal(keyup.value)" placeholder="keyup">
+{{curentVal}}
+<p>get value by submit</p>
+<input type="text" #onSubmit  placeholder="keyup">
+<button (click)="getSub(onSubmit.value)">Get value</button>
+{{curentSub}}
